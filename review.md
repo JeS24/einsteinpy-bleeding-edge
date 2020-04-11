@@ -1,10 +1,10 @@
 # Literature Review
 
-## Comparison of various Papers on Raytracing and Radiative Transfer
+## Comparison of various Papers
 
-This document records points about each of the papers, that are important to compare these papers. No derivations or other *descriptions* can be found here (unless necessary for the comparison). Please refer to the individual papers for the same.
+This document records points about each of the papers, that are important for comparison. No derivations or other *descriptions* can be found here (unless necessary for comparison). Please refer to the individual papers for the same.
 
-### List of codes/papers (Evolving):
+### List of codes/papers (Evolving - ⚙):
   * `geokerr` : [Dexter et al (2009)](https://iopscience.iop.org/article/10.1088/0004-637X/696/2/1616)
     * `YNOGK` : [Yang et al (2013)](https://iopscience.iop.org/article/10.1088/0067-0049/207/1/6)
   * `ODYSSEY` : [Pu et al (2016)](https://iopscience.iop.org/article/10.3847/0004-637X/820/2/105)
