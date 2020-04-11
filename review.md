@@ -5,7 +5,6 @@
 This document records points about each of the papers, that are important to compare these papers. No derivations or other *descriptions* can be found here (unless necessary for the comparison). Please refer to the individual papers for the same.
 
 ### List of codes/papers (Evolving):
-  * NA : [Fuerst et al](https://www.aanda.org/articles/aa/abs/2004/36/aa0814/aa0814.html)
   * `geokerr` : [Dexter et al (2009)](https://iopscience.iop.org/article/10.1088/0004-637X/696/2/1616)
     * `YNOGK` : [Yang et al (2013)](https://iopscience.iop.org/article/10.1088/0067-0049/207/1/6)
   * `ODYSSEY` : [Pu et al (2016)](https://iopscience.iop.org/article/10.3847/0004-637X/820/2/105)
@@ -15,9 +14,10 @@ This document records points about each of the papers, that are important to com
   * `RAPTOR` : [Bronzwaer et al (2018)](https://doi.org/10.1051/0004-6361/201732149)
   * `starless` (Not a published paper) : [Riccardo Antonelli](https://github.com/rantonels/starless)
   * `grtrans` : LINK TO BE ADDED
+  * NA : [Fuerst et al](https://www.aanda.org/articles/aa/abs/2004/36/aa0814/aa0814.html)
 
 
-## Summarized Comparison Table
+## Summarized Comparison Table (EVOLVING - ⚙)
 
 **N.B.: ⚙ denotes work in progress.**
 
@@ -65,7 +65,7 @@ This document records points about each of the papers, that are important to com
 * Lensing simuation
 * Overall extensibility to GRMHD simulations
 
-### A. `projectkerr` - Raquepas et al (2017) - `G = c = 1`
+### A. `projectkerr` - Raquepas et al (2017) - `G = c = 1` - ✔
 * Written in `MATLAB`
 * Solves in Boyer-Lindquist Coordinates
 * Works in Kerr Spacetime
@@ -83,7 +83,7 @@ This document records points about each of the papers, that are important to com
   * Useless for probing (getting physically relevant values out of) the integrated geodesics
 
 
-### B. `geokerr` - Dexter et al (2009) - `G = c = M = 1`
+### B. `geokerr` - Dexter et al (2009) - `G = c = M = 1` - ✔
 * Written in `FORTRAN77` (yikes)
 * Solves in Boyer-Lindquist Coordinates, provides transformations to Kerr-Schild Coordinates
 * Works in Kerr Spacetime
@@ -109,7 +109,7 @@ This document records points about each of the papers, that are important to com
   * No adaptive meshing near the strong gravity regions (close to the Black Hole)
 
 
-### C .`YNOGK` - Yang et al (2013) - `G = c = M = 1`
+### C .`YNOGK` - Yang et al (2013) - `G = c = M = 1` - ✔
 * Written in `FORTRAN95`
 * Builds on `geokerr` and Dexter et al's work
 * Solves in Boyer-Lindquist Coordinates
@@ -143,8 +143,7 @@ This document records points about each of the papers, that are important to com
   * No adaptive meshing, here as well
 
 
-### D. `ODYSSEY` - Pu et al (2016)
-* Written in `FORTRAN77` (yikes)
+### D. `ODYSSEY` - Pu et al (2016) - ⚙
 * 
 
 * **Pros**:
@@ -153,8 +152,7 @@ This document records points about each of the papers, that are important to com
   * 
 
 
-### E. `ARTIST` - Takahashi et al (2017)
-* Written in `FORTRAN77` (yikes)
+### E. `ARTIST` - Takahashi et al (2017) - ⚙
 * 
 
 * **Pros**:
@@ -163,8 +161,7 @@ This document records points about each of the papers, that are important to com
   * 
 
 
-### F. `BHAC` - Porth et al (2017)
-* Written in `FORTRAN77` (yikes)
+### F. `BHAC` - Porth et al (2017) - ⚙
 * 
 
 * **Pros**:
@@ -173,12 +170,11 @@ This document records points about each of the papers, that are important to com
   * 
 
 
-### G. `RAPTOR` - Bronzwaer et al (2018) - `G = c = 1`
-* Written in `FORTRAN77` (yikes)
-* Completely numerical
+### G. `RAPTOR` - Bronzwaer et al (2018) - `G = c = 1` - ⚙
+* Numerical
 * General to all spacetimes -> May be extensible to binary BH systems, neutron stars and **expanding FRW spacetime**
 * Automatically takes into account all gravitational effects
-* CPU & GPU agnostic - GOOD GPU
+* CPU & GPU agnostic
 * Minimal physical assumptions -> Supports arbitrary spacetimes & Time-Dependent Radiative Transfer 
 
 * Presents implementation in RK4 (more accurate) and Velocity Verlet, with adaptive step size (slightly less accurate, but faster).
@@ -196,20 +192,20 @@ This document records points about each of the papers, that are important to com
 * **Cons**:
 
 
-### H. `starless` - Riccardo Antonelli (~2 years ago)
+### H. `starless` - Riccardo Antonelli (~2 years ago) - ✔
 * Uses Schwarschild Metric
 * More of a hobbyist project, capable of producing some nice lensing effects on images
 * Does perform geodesic integration, but doesn't seem useful for probing physical quantities
 * Kudos for multiprocessing, though
 
 
-### I. `grtrans` - Dexter et al (2016)
+### I. `grtrans` - Dexter et al (2016) - ⚙
 * 
 * **Pros**:
   * 
 * **Cons**:
 
-## Comparison between Direct Numerical Integration & Analytical Elliptical Function approaches (EVOLVING)
+## Comparison between Direct Numerical Integration & Analytical Elliptical Function approaches (EVOLVING - ⚙)
 
 **ONLY PROS MENTIONED**
 
