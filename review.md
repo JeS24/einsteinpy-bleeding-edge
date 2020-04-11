@@ -51,14 +51,14 @@ This document records points about each of the papers, that are important to com
 
 
 ### (INITIAL) OUTLOOK:
-* For Ray Tracing: Prefer `geokerr`, `YNOGK`, `RAPTOR ????`
-* For Strong Gravity Simulations : Prefer `RAPTOR ????`, `BHAC`, `ARTIST ????`
-* For Accretion Flow (GRMHD) : Prefer `ARTIST ????`
+* For Ray Tracing: Prefer `geokerr`, `YNOGK`, `RAPTOR`
+* For Strong Gravity Simulations : Prefer `RAPTOR`, `BHAC`, `ARTIST`
+* For Accretion Flow (GRMHD) : Prefer `ARTIST`
 * For wallpapers & gifs : Prefer `starless` 😉
 
 ## Verbose Comparison
 
-<sup>##</sup>Cases of interest are:
+### Cases of interest are:
 * Black Hole Shadow
 * Accretion Disk & Flow
 * Redshift calculations
