@@ -1,5 +1,7 @@
 # Repository to store my research into implementing Null Geodesics in einsteinpy
 
+[`review.md`](https://github.com/JeS24/einsteinpy-bleeding-edge/blob/master/review.md) would be more up to date, for now.
+
 ## CURRENT PLAN:
 1. Read the papers.
 2. Sync the order of papers in [`status.ipynb`](https://github.com/JeS24/einsteinpy-bleeding-edge/blob/master/status.ipynb), with [`review.md`](https://github.com/JeS24/einsteinpy-bleeding-edge/blob/master/review.md).

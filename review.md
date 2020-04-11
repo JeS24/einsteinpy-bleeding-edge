@@ -13,8 +13,10 @@ This document records points about each of the papers, that are important for co
   * `projectkerr` (Not a published paper) : [Raquepas et al (2017)](http://www.math.mcgill.ca/gantumur/math599w17/project-kerr.pdf)
   * `RAPTOR` : [Bronzwaer et al (2018)](https://doi.org/10.1051/0004-6361/201732149)
   * `starless` (Not a published paper) : [Riccardo Antonelli](https://github.com/rantonels/starless)
-  * `grtrans` : LINK TO BE ADDED
   * NA : [Fuerst et al](https://www.aanda.org/articles/aa/abs/2004/36/aa0814/aa0814.html)
+  * `grtrans` : LINK TO BE ADDED
+  * `ipole` : LINK TO BE ADDED
+  * `GRay` & `GRay2` : LINK TO BE ADDED
 
 
 ## Summarized Comparison Table (EVOLVING - ⚙)
