@@ -25,17 +25,17 @@ This document records points about each of the papers, that are important for co
 
 | Comparison Points ⬇ \ Papers ➡ | `geokerr` | `YNOGK` | `ODYSSEY` | `ARTIST` | `BHAC` | `RAPTOR` | `projectkerr` | `starless` | `grtrans` |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Performs RayTracing | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ✔ | ✔ | ⚙ |
-| Performs Radiative Transfer | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ❌ | ❌ | ✔ |
-| Accuracy<sup>1</sup> | ⭐⭐⭐ | ⭐⭐⭐ | ⚙ | ⚙ | ⚙ | ⚙ | ⭐ | ⭐ | ⚙ |
-| Speed<sup>2</sup> | ⚡⚡⚡ | ⚡⚡⚡ | ⚙ | ⚙ | ⚙ | ⚙ | ⚡ | ⚡ | ⚙ |
-| Extensible to GRMHD | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ❌ | ❌ | ⚙ |
-| Black Hole Shadow | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ✔<sup>#1<sup> | ✔<sup>#1<sup> | ⚙ |
-| Accretion Disk & Flow | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ❌ | ✔<sup>#2<sup> | ⚙ |
-| Redshift calculations | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ❌ | ❌ | ⚙ |
-| Lensing simuation | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ⚙ | ❌ | ✔<sup>#3<sup> | ⚙ |
+| Performs RayTracing | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ✔ | ✔ | ⚙ |
+| Performs Radiative Transfer | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ❌ | ❌ | ✔ |
+| Accuracy<sup>1</sup> | ⭐⭐⭐ | ⭐⭐⭐ | ⚙ | ⚙ | ⚙ | ⭐⭐⭐ | ⭐ | ⭐ | ⚙ |
+| Speed<sup>2</sup> | ⚡⚡⚡ | ⚡⚡⚡ | ⚙ | ⚙ | ⚙ | ⚡⚡ | ⚡ | ⚡ | ⚙ |
+| Extensible to GRMHD | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ❌ | ❌ | ⚙ |
+| Black Hole Shadow | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ✔<sup>#1<sup> | ✔<sup>#1<sup> | ⚙ |
+| Accretion Disk & Flow | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ❌ | ✔<sup>#2<sup> | ⚙ |
+| Redshift calculations | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ❌ | ❌ | ⚙ |
+| Lensing simuation | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ❌ | ✔<sup>#3<sup> | ⚙ |
 | Approach | Semi-Analytical | Semi-Analytical |  |  |  | Numerical | Semi-Analytical | Analytical | ⚙ |
-| Builds up on |  | `geokerr` |  |  |  | `geokerr` and other works here | [Interstellar (Movie)](https://www.imdb.com/title/tt0816692/) | [Interstellar (Movie)](https://www.imdb.com/title/tt0816692/) | ⚙ |
+| Builds up on |  | `geokerr` |  |  |  | `geokerr`, `BHAC` | [Interstellar (Movie)](https://www.imdb.com/title/tt0816692/) | [Interstellar (Movie)](https://www.imdb.com/title/tt0816692/) | ⚙ |
 | Extra benefits |  |  |  |   |  | Recent, Works for arbitrary spacetimes, Adaptive integration step size | Good introduction to the problem | Nice wallpapers and gifs | ⚙ |
 
 * <sup>1</sup> Relative accuracy (based on papers' own report)
@@ -48,7 +48,7 @@ This document records points about each of the papers, that are important for co
   * Slow: ⚡
 * <sup>#1</sup> The shadow is not calculable. It's more of an initial condition.
 * <sup>#2</sup> Artificially added.
-* <sup>#3</sup> Not a simulation.
+* <sup>#3</sup> Nothing of analytic importance can be obtained from it.
 
 
 
@@ -172,26 +172,40 @@ This document records points about each of the papers, that are important for co
   * 
 
 
-### G. `RAPTOR` - Bronzwaer et al (2018) - `G = c = 1` - ⚙
+### G. `RAPTOR` - Bronzwaer et al (2018) - `G = c = 1` - ✔
+* Written in `C`, with a plotting module in `Python`
 * Numerical
 * General to all spacetimes -> May be extensible to binary BH systems, neutron stars and **expanding FRW spacetime**
 * Automatically takes into account all gravitational effects
-* CPU & GPU agnostic
-* Minimal physical assumptions -> Supports arbitrary spacetimes & Time-Dependent Radiative Transfer 
-
-* Presents implementation in RK4 (more accurate) and Velocity Verlet, with adaptive step size (slightly less accurate, but faster).
+* CPU & GPU agnostic -> Supports OpenMP (CPU Multiprocessing) and OpenACC (GPU Multiprocessing) (*Used as basis for ⚡⚡ speed rating*)
+* Minimal physical assumptions -> Supports arbitrary spacetimes & Time-Dependent Radiative Transfer
 * Hamiltonian Approach -> Requires an initial position and momentum
 * Makes use of the conserved quanitites -> *Angular Momentum, L*, *Energy, E* and *Carter's Constant, Q*
-  
-* Uses BL Coordinates, transforms to Kerr-Schild (KS) and Modified KS, when needed
-* Supports OpenMP (CPU Multiprocessing) and OpenACC (GPU Multiprocessing)
+* RK4 (more accurate) and Velocity Verlet, with adaptive step size (slightly less accurate, but faster)
+* Integrates from observer to source
+* Null geodesic integration and radiative transfer independent of choice of coordinate system or spacetime geometry
+* Uses BL Coordinates, Modified BL, Kerr-Schild (KS) and Modified KS
+* Radiative transfer ignores plasma refraction effects, scattering and polarization
+* Accounts for changes in plasma structure
+* Simultaneously integrates null geodesic and specific intensity, allowing for:
+  * Cutting off integration at a threshold (based on optical depth)
+  * No need to store geodesic
+  * Choosing proper integration step size for both calculations (Syncs step size with spacetime mesh)
+* Geodesic integration and Line Profile -> Shows excellent correspondence with `geokerr` (*Used as basis for ⭐⭐⭐ accuracy rating*)
+* Accretion flow -> Shoes excellent correspondence with `BHAC` (*Used as basis for ⭐⭐⭐ accuracy rating*)
+* Considers fast and slow light accretion flow
+* Considers all cases of interest<sup>##</sup>
+
 
 * **Pros**:
   * Generalizable to other spacetimes
-  * Adaptive step size helps with accuracy
+  * Adaptive step size helps with accuracy and stability
+  * Synced step size for radiative transfer calculations
+  * Consideration of plasma effects and relatively complicated accretion disk models
   * Multiprocessing support
-  * 
+  * Correspondence with `BHAC` and `geokerr`
 * **Cons**:
+  * Slower than `geokerr` and other semi-analytical approaches
 
 
 ### H. `starless` - Riccardo Antonelli (~2 years ago) - ✔
@@ -209,7 +223,8 @@ This document records points about each of the papers, that are important for co
 
 ## Comparison between Direct Numerical Integration & Analytical Elliptical Function approaches (EVOLVING - ⚙)
 
-**ONLY PROS MENTIONED**
+**ONLY PROS MENTIONED**\
+**IGNORING TRANSFER FUNCTION METHOD**
 
 | Direct Numerical Integration | Analytical Elliptical Function |
 |:---:|:---:|
