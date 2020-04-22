@@ -23,6 +23,8 @@ This document records points about each of the papers, that are important for co
 
 **N.B.: ⚙ denotes work in progress.**
 
+*Some rows seem redundant now. To be removed*
+
 | Comparison Points ⬇ \ Papers ➡ | `geokerr` | `YNOGK` | `ODYSSEY` | `ARTIST` | `BHAC` | `RAPTOR` | `projectkerr` | `starless` | `grtrans` |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | Performs RayTracing | ✔ | ✔ | ⚙ | ⚙ | ⚙ | ✔ | ✔ | ✔ | ⚙ |
@@ -195,6 +197,7 @@ This document records points about each of the papers, that are important for co
 * Accretion flow -> Shoes excellent correspondence with `BHAC` (*Used as basis for ⭐⭐⭐ accuracy rating*)
 * Considers fast and slow light accretion flow
 * Considers all cases of interest<sup>##</sup>
+
 
 
 * **Pros**:
