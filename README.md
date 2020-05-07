@@ -14,8 +14,8 @@ The Literature Review can be found in [`review.md`](https://github.com/JeS24/ein
 |:---:|:---:|:---:|
 | SI vs Geom Units or a separate unit conversion module | Geom is a necessity due to precision constraints | Use `astropy.units` for tracking units |
 | Numerical Integration vs (Semi-)Analytical Approach | [Check `review.md` for a comparison](https://github.com/JeS24/einsteinpy-bleeding-edge/blob/master/review.md#comparison-between-numerical-integration--analytical-approaches-elliptical-functions---) |
-| General Geodesic Integrator or Specific to certain spacetimes, like Kerr or Schwarzschild | Related to the aforementioned point |
+| General Spacetime Geodesic Integrator or Specific to certain spacetimes, like Kerr or Schwarzschild | Related to the aforementioned point |
 | Wrappers vs Pure Python implementation | Wrappers are more efficient. OpenCL or CUDA may alleviate this issue somewhat. |
-| CPU vs GPU | Related to the aforementioned point. Pushing hard with GPU support will render the module sluggish on most machines, at best. In Computational GR community, this may not be a major issue. |
+| CPU vs GPU | Related to the aforementioned point. Pushing hard with GPU support will render the module sluggish on most personal machines, at best. In Computational GR community, this may not be a major issue. |
 | Fast vs Slow Light Paradigm | Discussed under Time Dependent Radiative Transfer. "Slow light" implies many more calculations per timestep. Much higher memory and processing overhead. But "slow light" leads to much more realistic results too. |
-| GRMHD pluggability vs Self-Contained Package | We can make EPY support exported plasma models from pre-existing GRMHD softwares, like `HARM`, `BHAC` et cetera, or we can implement their functionality ourselves. |
+| GRMHD pluggability vs Self-Contained Package | We can make EPY support exported plasma models from pre-existing GRMHD softwares, like `HARM`, `BHAC` et cetera. For example, `GRay2` does precisely this. Or we can implement their functionality ourselves. |
