@@ -193,7 +193,7 @@ Check `./Papers (Non-Annotated)` for the .PDFs.
   * Slower than `geokerr` and other semi-analytical approaches
 
 
-### E. `GRay2` - Chan et al (2018) - `G = c = 1`
+### F. `GRay2` - Chan et al (2018) - `G = c = 1`
 * Written in `C`
 * Numerical
 * Implementation is specific to Kerr (More on this in the *Differences* section below)
@@ -218,6 +218,7 @@ Check `./Papers (Non-Annotated)` for the .PDFs.
   * Extensible to Radiative Transfer applications, but major additions required
   * Support for timelike geodesics
   * OpenCL support
+  * **We can perhaps use the mathematics here for the geodesic integrator and then, look for ways to extend this to radiative transfer.**
 * **Cons**:
   * Not general to other spacetimes 
   * Does not consider plasma effects

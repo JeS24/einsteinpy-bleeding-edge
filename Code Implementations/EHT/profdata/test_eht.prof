@@ -1,0 +1,60 @@
+         59202115 function calls in 288.297 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.256    0.256  288.297  288.297 <ipython-input-22-7479381f896f>:37(test_eht)
+     3600   10.547    0.003  288.041    0.080 <ipython-input-4-62c5a47feabc>:2(kerr_geodesic)
+ 10566485  125.011    0.000  202.238    0.000 <ipython-input-12-8277c61d20ff>:2(BL_to_cam)
+     3600    0.058    0.000   71.648    0.020 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\scipy\integrate\odepack.py:29(odeint)
+     3600    6.247    0.002   71.120    0.020 {built-in method scipy.integrate._odepack.odeint}
+  1456608   15.224    0.000   64.873    0.000 <ipython-input-8-84f1152ce9a9>:3(kerr_dgl)
+ 10566485   41.054    0.000   60.895    0.000 <ipython-input-15-d66e9bc50c3e>:3(R_kerr_to_cam)
+  1456608   49.648    0.000   49.648    0.000 <ipython-input-6-e02c4efe17a9>:3(kerr_functions)
+ 21158170   28.682    0.000   28.682    0.000 {built-in method numpy.array}
+ 10577285    7.892    0.000    7.892    0.000 {method 'dot' of 'numpy.ndarray' objects}
+     3600    2.049    0.001    2.049    0.001 <ipython-input-4-62c5a47feabc>:19(<listcomp>)
+     3600    0.022    0.000    1.183    0.000 <ipython-input-16-5ca07a6c3afd>:2(x_cam_to_x_BL)
+     3600    0.024    0.000    1.109    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\scipy\optimize\minpack.py:48(fsolve)
+     3600    0.071    0.000    1.086    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\scipy\optimize\minpack.py:168(_root_hybr)
+     3600    0.154    0.000    0.809    0.000 {built-in method scipy.optimize._minpack._hybrd}
+    58374    0.722    0.000    0.722    0.000 <ipython-input-17-768e7793a94c>:3(eqs_x_cam_to_x_BL)
+    14400    0.015    0.000    0.429    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+     3600    0.005    0.000    0.401    0.000 <__array_function__ internals>:2(diff)
+     3600    0.053    0.000    0.388    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\lib\function_base.py:1141(diff)
+     7200    0.003    0.000    0.342    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\_asarray.py:88(asanyarray)
+  3146016    0.223    0.000    0.223    0.000 {method 'append' of 'list' objects}
+     3600    0.025    0.000    0.167    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\scipy\optimize\minpack.py:24(_check_func)
+     3600    0.103    0.000    0.114    0.000 <ipython-input-11-cb8a12425bba>:3(inv_p_matrix)
+     7200    0.038    0.000    0.054    0.000 <ipython-input-14-bcff0ed0067b>:3(R_cam_to_kerr)
+     3600    0.009    0.000    0.051    0.000 <ipython-input-13-c63088e838b8>:4(x_cam_to_x_kerr)
+     3600    0.005    0.000    0.040    0.000 <ipython-input-10-e5d28fdbe73b>:3(initial_p_BL)
+     3600    0.005    0.000    0.038    0.000 {method 'all' of 'numpy.ndarray' objects}
+     3600    0.006    0.000    0.036    0.000 <__array_function__ internals>:2(atleast_1d)
+     3600    0.002    0.000    0.033    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\_methods.py:47(_all)
+     3600    0.031    0.000    0.031    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     7200    0.007    0.000    0.029    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\copy.py:66(copy)
+     3600    0.009    0.000    0.025    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\numerictypes.py:365(issubdtype)
+     3600    0.011    0.000    0.024    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\shape_base.py:25(atleast_1d)
+     7200    0.020    0.000    0.020    0.000 {method 'copy' of 'list' objects}
+     7200    0.010    0.000    0.016    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\numerictypes.py:293(issubclass_)
+     7200    0.006    0.000    0.014    0.000 <__array_function__ internals>:2(shape)
+     3600    0.002    0.000    0.012    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\_asarray.py:16(asarray)
+     3600    0.007    0.000    0.009    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\getlimits.py:365(__new__)
+     3600    0.008    0.000    0.008    0.000 {method 'flatten' of 'numpy.ndarray' objects}
+    10800    0.006    0.000    0.006    0.000 {built-in method builtins.issubclass}
+    10800    0.004    0.000    0.004    0.000 {method 'get' of 'dict' objects}
+    14400    0.004    0.000    0.004    0.000 {built-in method builtins.len}
+     3600    0.003    0.000    0.003    0.000 {method 'update' of 'dict' objects}
+     7200    0.003    0.000    0.003    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\fromnumeric.py:1903(shape)
+     3600    0.003    0.000    0.003    0.000 {built-in method numpy.core._multiarray_umath.normalize_axis_index}
+     3600    0.002    0.000    0.002    0.000 {method 'pop' of 'dict' objects}
+       82    0.001    0.000    0.001    0.000 {built-in method _warnings.warn}
+     3600    0.001    0.000    0.001    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\scipy\optimize\optimize.py:139(_check_unknown_options)
+     3600    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+     7200    0.001    0.000    0.001    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\fromnumeric.py:1899(_shape_dispatcher)
+     3600    0.001    0.000    0.001    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\lib\function_base.py:1137(_diff_dispatcher)
+     3600    0.001    0.000    0.001    0.000 E:\Coding\WinPython\WPy64-3740\python-3.7.4.amd64\lib\site-packages\numpy\core\shape_base.py:21(_atleast_1d_dispatcher)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
